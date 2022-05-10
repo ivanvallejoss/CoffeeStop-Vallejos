@@ -39,7 +39,11 @@ a:visited{
 
 #homeTitle{
     font-size: 1.8em;
+    animation-name: animacion_titulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
 h1{
     background: linear-gradient(to right, #4C2D10,#7F5427, #99652d);
     background-clip: text;
@@ -48,6 +52,11 @@ h1{
     letter-spacing: 5px;
 }
 
+@keyframes animacion_titulo{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0,5;}
+}
 
 /* 
 **************
