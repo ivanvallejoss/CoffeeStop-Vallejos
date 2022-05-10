@@ -19,6 +19,8 @@ a:visited{
 }
 
 
+
+
 /* 
 ******************
 
@@ -85,6 +87,12 @@ nav, .gralHeader{
 .navbar__menu li a{
     text-decoration: none;
     letter-spacing: 1px;
+    color: #533010;
+    transition: font-size 0.5s;
+}
+
+.navbar__menu li a:hover{
+    font-size: 1.1em;
 }
 
 
