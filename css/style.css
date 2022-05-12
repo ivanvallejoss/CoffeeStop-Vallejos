@@ -306,7 +306,7 @@ nav, .gralHeader{
 */
 
 #aboutUs{
-    margin-top: 15px;
+    padding-top: 15px;
     height: 100vh;
     display: flex;
     flex-direction: column;
