@@ -144,42 +144,31 @@ nav, .gralHeader{
     height: 70vh;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 30% 10%;
+    grid-template-rows: 30px 20% 20% 30% 20% 10%;
     grid-template-areas: 
-    "ele1 ele1 ele1 imgProd imgProd"
-    "ele1 ele1 ele1 imgProd imgProd"
-    "ele1 ele1 ele1 imgProd imgProd"
-    "ele1 ele1 ele1 imgProd imgProd"
+    ".      .       .   .       ."
+    "title title title imgProd imgProd"
+    "desc desc desc imgProd imgProd"
+    "desc desc desc imgProd imgProd"
+    "btn btn btn imgProd imgProd"
     ".      .   .   .       .";
 }
 
-.hmProd{
-    padding: 30px 40px 0px 15%;
-    grid-area: ele1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#hmProdTitle{
+    grid-area: title;
+    padding: 10px 40px 0px 15%;
 }
 
-.hmProd p{
+#hmProdDesc{
+    grid-area: desc;
+    padding: 0px 40px 0px 15%;
     font-size: 1.1em;
     overflow: hidden;
 }
 
-.imgProd{
-    margin-right: 15%;
-    padding-top: 20px;
-    grid-area: imgProd;
-}
-
-.imgProd img{
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    box-shadow: 0px 1px 3px rgb(156, 152, 152);
-}
-
 #prodBtn{
+    padding-right: 40px;
+    grid-area: btn;
     display: flex;
     justify-content: end;
 }
@@ -210,6 +199,18 @@ nav, .gralHeader{
     color: #7F5427;
 }
 
+.imgProd{
+    margin-right: 15%;
+    grid-area: imgProd;
+    padding-top: 20px;
+}
+
+.imgProd img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgb(156, 152, 152);
+}
 
 
 
@@ -446,7 +447,7 @@ footer{
 @media screen and (max-width: 501px){
     
     #header{
-        height: 20vh;
+        height: 18vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -458,6 +459,7 @@ footer{
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: 3px;
+        font-size: 2em;
     }
 
     .navbar__menu{
@@ -471,32 +473,26 @@ footer{
     
     #homeMain{
         padding-top: 5%;
-        height: 73vh;
+        height: 75vh;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 20% 20% 35% 20% 5%;
+        grid-template-rows: 10% 30% 20% 20% 20%;
         grid-template-areas: 
-        "ele1 ele1 ele1 imgProd imgProd"
-        "ele1 ele1 ele1 imgProd imgProd"
-        "ele1 ele1 ele1 imgProd imgProd"
-        "ele1 ele1 ele1 ele1 ele1"
-        ".      .   .   .       .";
+        "title title title title title"
+        "imgProd imgProd imgProd imgProd imgProd"
+        "imgProd imgProd imgProd imgProd imgProd"
+        "desc desc desc desc desc"
+        "btn btn btn btn btn";
     }
 
-    .hmProd{
-        padding: 0px 30px 0px 5%;
-        grid-area: ele1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    #hmProdTitle{
+        font-size: 2em;
+        margin: 0px 27% 0px auto;
+        /* text-align: center; */
     }
 
-    .hmProd h2{
-        font-size: 1.8em;
-        margin-bottom: 5px;
-    }
-
-    .hmProd p{
+    #hmProdDesc{
+        margin: 0px auto;
         font-size: 0.9em;
         overflow: hidden;
     }
@@ -506,7 +502,7 @@ footer{
         justify-content: center;
     }
 
-    #prodBtn input{
+    #prodBtn button{
         margin: 10px 0px 0px 15px;
         height: 50px;
         width: 90px;
@@ -517,13 +513,15 @@ footer{
     }
 
     .imgProd{
-        margin-right: 5%;
+        width: 70%;
+        height: 100%;
+        margin: 0px auto;
         grid-area: imgProd;
     }
 
     .imgProd img{
         border-radius: 50%;
-        height: 80%;
+        height: 95%;
         width: 100%;
         box-shadow: 0px 1px 3px rgb(156, 152, 152);
     }
