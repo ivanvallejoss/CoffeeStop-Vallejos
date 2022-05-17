@@ -11,6 +11,7 @@ body{
 }
 
 a{
+    color:#533010;
     text-decoration: none;
 }
 
@@ -212,7 +213,69 @@ nav, .gralHeader{
     box-shadow: 0px 1px 3px rgb(156, 152, 152);
 }
 
+/* 
+CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
+*/
 
+
+#carrouselSec{
+    margin-top: 10vh;
+    height: 50vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom, white, white, #7f5427); */
+}
+
+.mainCarr{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40vh;
+    width: 1000px;
+    margin: 0px auto;
+    gap: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mainCarr ul{
+    list-style: none;
+}
+
+.mainCarr__cards{
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    box-shadow: 0px 5px 15px rgb(156, 152, 152);
+}
+
+.mainCarr__menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainCarr__cards div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 500px;
+    height: 99%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(156, 152, 152);
+}
+
+.mainCarr__cards img{
+    width: 50%;
+    object-fit: contain;
+    height: 100%;
+    border-radius: 10px;
+    /* box-shadow: 0px 3px 8px rgb(0, 0, 0);  */
+}
+
+.mainCarr__cards p{
+    padding: 10px;
+}
 
 /* 
 
