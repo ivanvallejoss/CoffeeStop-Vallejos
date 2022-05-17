@@ -225,7 +225,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     /* background: linear-gradient(to bottom, white, white, #7f5427); */
 }
 
-.mainCarr{
+.carrousel{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -238,11 +238,11 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     box-shadow: 0px 5px 15px rgb(156, 152, 152);
 }
 
-.mainCarr ul{
+.carrousel ul{
     list-style: none;
 }
 
-.mainCarr__cards{
+.mainCarr{
     display: flex;
     overflow: hidden;
     border-radius: 10px;
@@ -251,7 +251,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     animation-timing-function: ease-in;
 }
 
-.mainCarr__cards div{
+.mainCarr__cards{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -262,7 +262,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     box-shadow: 0px 3px 7px rgb(156, 152, 152);
 }
 
-.mainCarr__cards img{
+.mainCarr__cards--img{
     width: 50%;
     object-fit: contain;
     height: 100%;
@@ -286,8 +286,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 
     90%{margin-left: -275%}
     100%{margin-left: -300%}
-} */
-
+} 
 
 /* 
 
@@ -518,6 +517,79 @@ footer{
 *******************
 
 */
+
+@media screen and (max-width: 1024px){
+    #carrouselSec{
+        margin-top: 10vh;
+        height: 50vh;
+        width: 100%;
+        /* background: linear-gradient(to bottom, white, white, #7f5427); */
+    }
+    
+    .carrousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 40vh;
+        width: 750px;
+        margin: 0px auto;
+        gap: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgb(156, 152, 152);
+    }
+    
+    .carrousel ul{
+        list-style: none;
+    }
+    
+    .mainCarr{
+        display: flex;
+        overflow: hidden;
+        border-radius: 10px;
+        scroll-behavior: smooth;
+        animation: carrouselAuto 20s infinite normal;
+        animation-timing-function: ease-in;
+    }
+    
+    .mainCarr__cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 375px;
+        height: 99%;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        box-shadow: 0px 3px 7px rgb(156, 152, 152);
+    }
+    
+    .mainCarr__cards--img{
+        width: 50%;
+        object-fit: contain;
+        height: 100%;
+        border-radius: 10px;
+        /* box-shadow: 0px 3px 8px rgb(0, 0, 0);  */
+    }
+    
+    .mainCarr__cards p{
+        padding: 10px;
+    }
+    
+    @keyframes carrouselAuto {
+        0%{margin-left: 0;}
+        10%{margin-left: 0;}
+    
+        20%{margin-left: -85%}
+        50%{margin-left: -110%}
+    
+        55%{margin-left: -195%}
+        85%{margin-left: -210%}
+    
+        90%{margin-left: -275%}
+        100%{margin-left: -300%}
+    } 
+}
+
 
 @media screen and (max-width: 501px){
     
