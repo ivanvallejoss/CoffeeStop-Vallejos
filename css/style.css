@@ -235,6 +235,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     gap: 10px;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(156, 152, 152);
 }
 
 .mainCarr ul{
@@ -246,12 +247,8 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     overflow: hidden;
     border-radius: 10px;
     scroll-behavior: smooth;
-    box-shadow: 0px 5px 15px rgb(156, 152, 152);
-}
-
-.mainCarr__menu{
-    display: flex;
-    justify-content: space-around;
+    animation: carrouselAuto 20s infinite normal;
+    animation-timing-function: ease-in;
 }
 
 .mainCarr__cards div{
@@ -262,7 +259,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     height: 99%;
     /* border: 1px solid black; */
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgb(156, 152, 152);
+    box-shadow: 0px 3px 7px rgb(156, 152, 152);
 }
 
 .mainCarr__cards img{
@@ -276,6 +273,21 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 .mainCarr__cards p{
     padding: 10px;
 }
+
+@keyframes carrouselAuto {
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+
+    20%{margin-left: -85%}
+    50%{margin-left: -110%}
+
+    55%{margin-left: -195%}
+    85%{margin-left: -210%}
+
+    90%{margin-left: -275%}
+    100%{margin-left: -300%}
+} */
+
 
 /* 
 
