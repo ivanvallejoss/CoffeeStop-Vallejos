@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #533010;
+    font-size: 14px;
+}
+
+a{
+    color:#533010;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #533010;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h1{
+    background: linear-gradient(to right, #4C2D10,#7F5427, #99652d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 5px;
+    animation-name: animacion_titulo;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes animacion_titulo{
+    0%{
+        opacity: 0;
+        }
+    33%{
+        opacity: 0.5;
+    }
+
+    66%{opacity: 1;}
+
+    100%{
+        opacity: 0.8;
+    }
+}

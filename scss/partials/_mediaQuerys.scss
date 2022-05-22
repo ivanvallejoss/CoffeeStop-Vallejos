@@ -1,0 +1,325 @@
+/* 
+
+*******************
+    REPONSIVE
+*******************
+
+*/
+
+@media screen and (max-width: 1024px){
+    #carrouselSec{
+        margin-top: 10vh;
+        height: 50vh;
+        width: 100%;
+        /* background: linear-gradient(to bottom, white, white, #7f5427); */
+    }
+    
+    .carrousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 40vh;
+        width: 750px;
+        margin: 0px auto;
+        gap: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgb(156, 152, 152);
+    }
+    
+    .carrousel ul{
+        list-style: none;
+    }
+    
+    .mainCarr{
+        display: flex;
+        overflow: hidden;
+        border-radius: 10px;
+        scroll-behavior: smooth;
+        animation: carrouselAuto 20s infinite normal;
+        animation-timing-function: ease-in;
+    }
+    
+    .mainCarr__cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 375px;
+        height: 99%;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        box-shadow: 0px 3px 7px rgb(156, 152, 152);
+    }
+    
+    .mainCarr__cards--img{
+        width: 50%;
+        object-fit: contain;
+        height: 100%;
+        border-radius: 10px;
+        /* box-shadow: 0px 3px 8px rgb(0, 0, 0);  */
+    }
+    
+    .mainCarr__cards p{
+        padding: 10px;
+    }
+    
+    @keyframes carrouselAuto {
+        0%{margin-left: 0;}
+        10%{margin-left: 0;}
+    
+        20%{margin-left: -85%}
+        50%{margin-left: -110%}
+    
+        55%{margin-left: -195%}
+        85%{margin-left: -210%}
+    
+        90%{margin-left: -275%}
+        100%{margin-left: -300%}
+    } 
+}
+
+
+@media screen and (max-width: 501px){
+    
+    #header{
+        height: 18vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        background: linear-gradient(to right, #4C2D10,#7F5427, #99652d);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 3px;
+        font-size: 2em;
+    }
+
+    .navbar__menu{
+        width: 100%;
+        display: flex;
+        font-size: 0.8em;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    #homeMain{
+        padding-top: 5%;
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 10% 30% 20% 20% 20%;
+        grid-template-areas: 
+        "title title title title title"
+        "imgProd imgProd imgProd imgProd imgProd"
+        "imgProd imgProd imgProd imgProd imgProd"
+        "desc desc desc desc desc"
+        "btn btn btn btn btn";
+    }
+
+    #hmProdTitle{
+        font-size: 2em;
+        margin: 0px 27% 0px auto;
+        /* text-align: center; */
+    }
+
+    #hmProdDesc{
+        margin: 0px auto;
+        font-size: 0.9em;
+        overflow: hidden;
+    }
+
+    #prodBtn{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    #prodBtn button{
+        margin: 10px 0px 0px 15px;
+        height: 50px;
+        width: 90px;
+        border-radius: 10px;
+        font-size: 1em;
+        letter-spacing: 1px;
+        box-shadow: 0px 3px 5px rgb(156, 152, 152);
+    }
+
+    .imgProd{
+        width: 70%;
+        height: 100%;
+        margin: 0px auto;
+        grid-area: imgProd;
+    }
+
+    .imgProd img{
+        border-radius: 50%;
+        height: 95%;
+        width: 100%;
+        box-shadow: 0px 1px 3px rgb(156, 152, 152);
+    }
+
+    /* 
+    
+    PRODUCT-RESPONSIVE PRODUCT-RESPONSIVE PRODUCT-RESPONSIVE
+    PRODUCT-RESPONSIVE PRODUCT-RESPONSIVE PRODUCT-RESPONSIVE
+    PRODUCT-RESPONSIVE PRODUCT-RESPONSIVE PRODUCT-RESPONSIVE
+
+    */
+
+    .mainProd{
+        height: 120vh;
+        display: grid;
+        grid-template-columns: 2% 96% 2%;
+        grid-template-rows: 88% 10% 2%;
+        grid-template-areas: 
+        ". product ."
+        "aside aside aside"
+        ".  .   .";
+    }
+    
+    .sectProd{
+        grid-area: product;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .sectProd__box{
+        height: 22%;
+        border: none;
+        display: flex;
+        border-radius: 10px;
+        font: 0.9em;
+    }
+    
+    .sectProd__box div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .sectProd__box p{
+        color: black;
+        padding-left: 2%;
+        font-size: 0.9em;
+    }
+    
+    .sectProd__box h3{
+        padding-left: 1%;
+        font-size: 1.1em;
+    }
+    
+    .sectProd__box--price{
+        color: #0ace1d;
+        font-size: 1.1em;
+    }
+    
+    .box__img{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #4C2D10;
+        border-radius: 10px;
+    }
+    
+    .box__img img{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .anuncioProd{
+        grid-area: aside;
+        margin: auto;
+        height: 100%;
+        width: 99%;
+        border: 1px solid #4C2D10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 
+    
+    FOOTER-RESPONSIVE FOOTER-RESPONSIVE FOOTER-RESPONSIVE
+    FOOTER-RESPONSIVE FOOTER-RESPONSIVE FOOTER-RESPONSIVE
+    FOOTER-RESPONSIVE FOOTER-RESPONSIVE FOOTER-RESPONSIVE
+    
+    */
+
+    footer{
+        height: 25vh;
+        font-size: 0.7em;
+        border-top: 1px solid #4C2D10;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 40% 20%;
+        grid-template-areas: 
+        "form icons"
+        "form info"
+        "copyr copyr";
+    }
+    
+    #footerForm{
+        grid-area: form;
+        margin: 10px 5px 0px 5%;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #4C2D10;
+    }
+    
+    #footerForm div{
+        margin-top: 10px;
+    }
+    
+    #footerIcons{
+        grid-area: icons;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #footerIcons div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #4C2D10;
+        box-shadow: 0px 1px 3px rgb(156, 152, 152);
+    }
+    
+    #footerIcons div:active{
+        height: 23px;
+        width: 23px;
+        background-color: #7F5427;
+        color: #FFF;
+        border: none;
+    }
+    
+    #footerIcons a:active{
+        color: #FFF;
+    }
+    
+    #footerInfo{
+        grid-area: info;
+        margin: 0px 15px 0px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #footerCopy{
+        grid-area: copyr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7em;
+    }
+
+
+}

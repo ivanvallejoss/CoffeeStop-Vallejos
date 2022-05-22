@@ -1,0 +1,46 @@
+/* 
+
+******************
+    About Us
+******************
+
+*/
+
+#aboutUs{
+    padding-top: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutUs div{
+    display: flex;
+    align-items: center;
+    margin: 5px 35px;
+    height: 28%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(156, 152, 152);
+}
+
+#aboutUs div:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+#aboutUs iframe{
+    height: 100%;
+    border-radius: 10px;
+}
+
+#aboutUs img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+#aboutUs p{
+    margin: 0px 10px;
+}
+
+#aboutUs span{
+    font-size: 1.4em;
+}
