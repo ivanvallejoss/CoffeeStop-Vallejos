@@ -22,37 +22,37 @@ nav, .gralHeader{
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
 
-.navbar__menu{
-    width: 100%;
-    display: flex;
-    font-size: 1em;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
+    &__menu{
+        width: 100%;
+        display: flex;
+        font-size: 1em;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
 
-.navbar__menu li a{
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: #533010;
-    transition: font-size 0.5s;
-}
+        & li a{
+            text-decoration: none;
+            letter-spacing: 1px;
+            color: #533010;
+            transition: font-size 0.5s;
 
-.navbar__menu li a:hover{
-    font-size: 1.1em;
+            &:hover{
+                font-size: 1.1em;
+            }
+        }
+    }
 }
-
 
 .burguer{
     display: none;
+
+    & div{
+        width: 25px;
+        height: 3px;
+        background-color:#533010;
+        ;
+        margin: 5px;
+    }
 }
 
-.burguer div{
-    width: 25px;
-    height: 3px;
-    background-color:#533010;
-    ;
-    margin: 5px;
-}

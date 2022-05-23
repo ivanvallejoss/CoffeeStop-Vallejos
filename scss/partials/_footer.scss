@@ -6,7 +6,6 @@
 
 */
 
-
 footer{
     height: 25vh;
     font-size: 0.9em;
@@ -26,10 +25,10 @@ footer{
     display: flex;
     flex-direction: column;
     border-right: 1px solid #4C2D10;
-}
 
-#footerForm div{
-    margin-top: 10px;
+    & div{
+        margin-top: 10px;
+    }
 }
 
 #footerIcons{
@@ -37,28 +36,28 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
 
-#footerIcons div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 22px;
-    width: 22px;
-    border: 1px solid #4C2D10;
-    box-shadow: 0px 1px 3px rgb(156, 152, 152);
-}
+    & div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 22px;
+        width: 22px;
+        border: 1px solid #4C2D10;
+        box-shadow: 0px 1px 3px rgb(156, 152, 152);
 
-#footerIcons div:active{
-    height: 25px;
-    width: 25px;
-    background-color: #7F5427;
-    color: #FFF;
-    border: none;
-}
+        &:active{
+            height: 25px;
+            width: 25px;
+            background-color: #7F5427;
+            color: #FFF;
+            border: none;
+        }
+    }
 
-#footerIcons a:active{
-    color: #FFF;
+    &:active{
+        color: #FFF;
+    }
 }
 
 #footerInfo{

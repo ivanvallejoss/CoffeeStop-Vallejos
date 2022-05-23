@@ -13,10 +13,10 @@ body{
 a{
     color:#533010;
     text-decoration: none;
-}
-
-a:visited{
+    
+    &:visited{
     color: #533010;
+    }
 }
 
 h2{
