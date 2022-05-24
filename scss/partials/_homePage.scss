@@ -109,8 +109,6 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 #carrouselSec{
     margin-top: 10vh;
     height: 50vh;
-    width: 100%;
-    /* background: linear-gradient(to bottom, white, white, #7f5427); */
 }
 
 .carrousel{
@@ -118,7 +116,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     flex-direction: column;
     justify-content: flex-end;
     height: 40vh;
-    width: 1000px;
+    width: 80vw;
     margin: 0px auto;
     gap: 10px;
     overflow: hidden;
@@ -144,18 +142,16 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        width: 500px;
+        width: 40vw;
         height: 99%;
-        /* border: 1px solid black; */
         border-radius: 10px;
-        box-shadow: 0px 3px 7px rgb(156, 152, 152);
+        box-shadow: 0px 5px 15px rgb(156, 152, 152);
 
         &--img{
             width: 50%;
             object-fit: contain;
             height: 100%;
             border-radius: 10px;
-            /* box-shadow: 0px 3px 8px rgb(0, 0, 0);  */
         }
 
         & p{

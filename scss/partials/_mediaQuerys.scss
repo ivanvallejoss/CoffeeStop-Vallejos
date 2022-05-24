@@ -19,7 +19,7 @@
         flex-direction: column;
         justify-content: flex-end;
         height: 40vh;
-        width: 750px;
+        width: 80vw;
         margin: 0px auto;
         gap: 10px;
         overflow: hidden;
@@ -44,7 +44,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        width: 375px;
+        width: 40vw;
         height: 99%;
         /* border: 1px solid black; */
         border-radius: 10px;
@@ -161,6 +161,93 @@
         width: 100%;
         box-shadow: 0px 1px 3px rgb(156, 152, 152);
     }
+
+    /* 
+    
+    CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
+    
+    */
+
+    #carrouselSec{
+        margin-top: 10vh;
+        height: 50vh;
+        width: 100%;
+        /* background: linear-gradient(to bottom, white, white, #7f5427); */
+    }
+    
+    .carrousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 40vh;
+        width: 95vw;
+        margin: 0px auto;
+        gap: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgb(156, 152, 152);
+    }
+    
+    .carrousel ul{
+        list-style: none;
+    }
+    
+    .mainCarr{
+        display: flex;
+        overflow: hidden;
+        border-radius: 10px;
+        scroll-behavior: smooth;
+        animation: carrouselAuto 25s infinite normal;
+        animation-timing-function: ease-in;
+    }
+    
+    .mainCarr__cards{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 95vw;
+        height: 99%;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgb(156, 152, 152);
+    }
+    
+    .mainCarr__cards--img{
+        width: 50%;
+        object-fit: contain;
+        height: 100%;
+        border-radius: 10px;
+        /* box-shadow: 0px 3px 8px rgb(0, 0, 0);  */
+    }
+    
+    .mainCarr__cards p{
+        padding: 10px;
+    }
+    
+    @keyframes carrouselAuto {
+        0%{margin-left: 0;}
+        5%{margin-left: 0;}
+    
+        7%{margin-left: -85%}
+        22%{margin-left: -110%}
+    
+        25%{margin-left: -195%}
+        40%{margin-left: -210%}
+    
+        42%{margin-left: -285%}
+        57%{margin-left: -310%}
+    
+        60%{margin-left: -385%}
+        75%{margin-left: -410%}
+    
+        78%{margin-left: -485%}
+        90%{margin-left: -505%}
+    
+        93%{margin-left: -575%}
+        100%{margin-left: -600%}
+    } 
+
+
 
     /* 
     
