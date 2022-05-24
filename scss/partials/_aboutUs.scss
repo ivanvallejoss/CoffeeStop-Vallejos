@@ -18,8 +18,8 @@
         align-items: center;
         margin: 5px 35px;
         height: 28%;
-        border-radius: 10px;
-        box-shadow: 0px 5px 10px rgb(156, 152, 152);
+        border-radius: $brd-rds;
+        box-shadow: $box-shadow-max;
 
         &:nth-child(3){
             flex-direction: row-reverse;
@@ -27,13 +27,13 @@
     }
 
     & iframe{
-        height: 100%;
-        border-radius: 10px;
+        height: $full;
+        border-radius: $brd-rds;
     }
 
     & img{
-        height: 100%;
-        border-radius: 10px;
+        height: $full;
+        border-radius: $brd-rds;
     }
 
     & p{

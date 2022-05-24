@@ -63,10 +63,10 @@
         margin: 0px 5px 0px 15px;
         height: 70px;
         width: 110px;
-        border-radius: 10px;
+        border-radius: $brd-rds;
         font-size: 1.2em;
         letter-spacing: 1px;
-        box-shadow: 0px 3px 5px rgb(156, 152, 152);
+        box-shadow: $box-shadow-min;
 
         &:hover{
             cursor: pointer;
@@ -76,13 +76,13 @@
 
 #buyBtn{
     background-color: #7F5427;
-    color: rgb(255, 255, 255);
-    border: 1px solid #4C2D10;
+    color: #FFF;
+    border: $brd-gral;
 }
 
 #moreBtn{
     background-color: #FFF;
-    border: 1px solid #7F5427;
+    border: $brd-gral;
     color: #7F5427;
 }
 
@@ -92,10 +92,10 @@
     padding-top: 20px;
 
     & img{
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
-        box-shadow: 0px 1px 3px rgb(156, 152, 152);
+        border-radius: $half;
+        height: $full;
+        width: $full;
+        box-shadow: $box-shadow-min;
     }
 }
 
@@ -117,11 +117,11 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     justify-content: flex-end;
     height: 40vh;
     width: 80vw;
-    margin: 0px auto;
+    margin: $mrg-ctr-sides;
     gap: 10px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgb(156, 152, 152);
+    border-radius: $brd-rds;
+    box-shadow: $box-shadow-max;
 
     & ul{
         list-style: none;
@@ -133,7 +133,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 .mainCarr{
     display: flex;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: $brd-rds;
     scroll-behavior: smooth;
     animation: carrouselAuto 20s infinite normal;
     animation-timing-function: ease-in;
@@ -144,14 +144,14 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
         justify-content: flex-start;
         width: 40vw;
         height: 99%;
-        border-radius: 10px;
-        box-shadow: 0px 5px 15px rgb(156, 152, 152);
+        border-radius: $brd-rds;
+        box-shadow: $box-shadow-gral;
 
         &--img{
-            width: 50%;
+            width: $half;
             object-fit: contain;
-            height: 100%;
-            border-radius: 10px;
+            height: $full;
+            border-radius: $brd-rds;
         }
 
         & p{

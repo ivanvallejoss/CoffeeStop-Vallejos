@@ -2,6 +2,27 @@
 
     Variables para los atributos generales
 
-
-
 */
+
+// BOX SHADOW VARIABLES
+$box-shadow-min: 0px 3px 5px rgb(156, 152, 152);
+$box-shadow-gral: 0px 5px 7px rgb(156, 152, 152);
+$box-shadow-max: 0px 5px 15px rgb(156, 152, 152);
+
+
+// GENERAL BORDER VARIABLE
+$brd-gral: 1px solid #4C2D10;
+
+
+// BORDER RADIUS VARIABLE
+$brd-rds: 10px;
+
+
+// PERCENTAGE VARIABLES
+$full: 100%;
+$half: 50%;
+
+
+// CENTER MARGIN VARIABLES
+$mrg-ctr-sides: 0px auto;
+$mrg-ctr-top: auto 0px;

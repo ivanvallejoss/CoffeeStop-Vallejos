@@ -8,8 +8,6 @@ Importando parciales
 
     Variables para los atributos generales
 
-
-
 */
 * {
   margin: 0px;
@@ -158,24 +156,23 @@ footer {
   height: 22px;
   width: 22px;
   border: 1px solid #4C2D10;
-  box-shadow: 0px 1px 3px #9c9898;
+  box-shadow: 0px 3px 5px #9c9898;
 }
 
 #footerIcons div:active {
-  height: 25px;
-  width: 25px;
+  height: 18px;
+  width: 18px;
   background-color: #7F5427;
-  color: #FFF;
   border: none;
 }
 
-#footerIcons:active {
+#footerIcons div a:active {
   color: #FFF;
 }
 
 #footerInfo {
   grid-area: info;
-  margin: 0px 15px 0px 15px;
+  margin: 0px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,13 +255,13 @@ footer {
 
 #buyBtn {
   background-color: #7F5427;
-  color: white;
+  color: #FFF;
   border: 1px solid #4C2D10;
 }
 
 #moreBtn {
   background-color: #FFF;
-  border: 1px solid #7F5427;
+  border: 1px solid #4C2D10;
   color: #7F5427;
 }
 
@@ -278,7 +275,7 @@ footer {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  box-shadow: 0px 1px 3px #9c9898;
+  box-shadow: 0px 3px 5px #9c9898;
 }
 
 /* 
@@ -322,7 +319,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   width: 40vw;
   height: 99%;
   border-radius: 10px;
-  box-shadow: 0px 5px 15px #9c9898;
+  box-shadow: 0px 5px 7px #9c9898;
 }
 
 .mainCarr__cards--img {
@@ -432,17 +429,32 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 .anuncioProd {
   grid-area: aside;
   margin: auto 0px;
-  height: 95%;
+  height: 96%;
   border: 1px solid #4C2D10;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* .anuncioProd img{
-    height: 100%;
-    width: 100%;
-} */
+.anuncioProd__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px #9c9898;
+}
+
+.anuncioProd__container h4 {
+  font-size: 2em;
+  position: absolute;
+  z-index: 10000;
+}
+
+.anuncioProd__container img {
+  height: 100%;
+  width: 100%;
+}
+
 /* 
 
 ******************
@@ -464,7 +476,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   margin: 5px 35px;
   height: 28%;
   border-radius: 10px;
-  box-shadow: 0px 5px 10px #9c9898;
+  box-shadow: 0px 5px 15px #9c9898;
 }
 
 #aboutUs div:nth-child(3) {

@@ -8,7 +8,7 @@
 
 
 nav, .gralHeader{
-    box-shadow: 0px 5px 7px rgb(156, 152, 152);
+    box-shadow: $box-shadow-gral;
     position: sticky;
     top: 0px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), 
@@ -19,12 +19,12 @@ nav, .gralHeader{
 
 .navbar{
     min-height: 7vh;
-    width: 100%;
+    width: $full;
     display: flex;
     justify-content: space-around;
 
     &__menu{
-        width: 100%;
+        width: $full;
         display: flex;
         font-size: 1em;
         align-items: center;
@@ -51,7 +51,6 @@ nav, .gralHeader{
         width: 25px;
         height: 3px;
         background-color:#533010;
-        ;
         margin: 5px;
     }
 }
