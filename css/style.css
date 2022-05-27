@@ -224,7 +224,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: center;
+  align-items: flex-start;
   height: 40vh;
   width: 80vw;
   margin: 0px auto;

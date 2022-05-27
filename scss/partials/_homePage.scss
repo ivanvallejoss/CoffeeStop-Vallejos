@@ -112,7 +112,8 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 }
 
 .carrousel{
-    @include flexBox(column, end);
+    @include flexBox(column, end, flex-start);
+    //"ALIGN-ITEMS:START" IMPORTANTISIMO, DE OTRO MODO SE ROMPE EL CARROUSEL
     height: 40vh;
     width: 80vw;
     margin: map-get($margin-ctr, sides);
