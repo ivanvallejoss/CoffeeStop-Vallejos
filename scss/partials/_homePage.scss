@@ -8,9 +8,10 @@
 
 #header{
     height: 23vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 #homeTitle{
@@ -56,8 +57,7 @@
 #prodBtn{
     padding-right: 40px;
     grid-area: btn;
-    display: flex;
-    justify-content: end;
+    @include flexBox(row, end);
 
     & button{
         margin: 0px 5px 0px 15px;
@@ -66,7 +66,7 @@
         border-radius: $brd-rds;
         font-size: 1.2em;
         letter-spacing: 1px;
-        box-shadow: $box-shadow-min;
+        box-shadow: map-get($box-shadow, min);
 
         &:hover{
             cursor: pointer;
@@ -95,7 +95,7 @@
         border-radius: $half;
         height: $full;
         width: $full;
-        box-shadow: $box-shadow-min;
+        box-shadow: map-get($box-shadow, min);
     }
 }
 
@@ -112,16 +112,14 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 }
 
 .carrousel{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    @include flexBox(column, end);
     height: 40vh;
     width: 80vw;
-    margin: $mrg-ctr-sides;
+    margin: map-get($margin-ctr, sides);
     gap: 10px;
     overflow: hidden;
     border-radius: $brd-rds;
-    box-shadow: $box-shadow-max;
+    box-shadow: map-get($box-shadow, max);
 
     & ul{
         list-style: none;
@@ -139,16 +137,14 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
     animation-timing-function: ease-in;
 
     &__cards{
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        @include flexBox(row, flex-start, flex-start);
         width: 40vw;
         height: 99%;
         border-radius: $brd-rds;
-        box-shadow: $box-shadow-gral;
+        box-shadow: map-get($box-shadow, gral);
 
         &--img{
-            width: $half;
+            width: $full/2;
             object-fit: contain;
             height: $full;
             border-radius: $brd-rds;

@@ -9,6 +9,11 @@ Importando parciales
     Variables para los atributos generales
 
 */
+/* 
+
+VARIABLE FLEX-BOX
+
+*/
 * {
   margin: 0px;
   padding: 0px;
@@ -21,13 +26,9 @@ body {
   font-size: 14px;
 }
 
-a {
+a, a:visited {
   color: #533010;
   text-decoration: none;
-}
-
-a:visited {
-  color: #533010;
 }
 
 h2 {
@@ -79,15 +80,18 @@ nav, .gralHeader {
   min-height: 7vh;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .navbar__menu {
-  width: 100%;
   display: flex;
-  font-size: 1em;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1em;
   list-style: none;
 }
 
@@ -114,79 +118,6 @@ nav, .gralHeader {
 }
 
 /* 
-
-****************
-    Footer
-****************
-
-*/
-footer {
-  height: 25vh;
-  font-size: 0.9em;
-  border-top: 1px solid #4C2D10;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 40% 40% 20%;
-  grid-template-areas: "form icons" "form info" "copyr copyr";
-}
-
-#footerForm {
-  grid-area: form;
-  margin: 10px 0px 0px 5%;
-  display: flex;
-  flex-direction: column;
-  border-right: 1px solid #4C2D10;
-}
-
-#footerForm div {
-  margin-top: 10px;
-}
-
-#footerIcons {
-  grid-area: icons;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#footerIcons div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 22px;
-  width: 22px;
-  border: 1px solid #4C2D10;
-  box-shadow: 0px 3px 5px #9c9898;
-}
-
-#footerIcons div:active {
-  height: 18px;
-  width: 18px;
-  background-color: #7F5427;
-  border: none;
-}
-
-#footerIcons div a:active {
-  color: #FFF;
-}
-
-#footerInfo {
-  grid-area: info;
-  margin: 0px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#footerCopy {
-  grid-area: copyr;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.8em;
-}
-
-/* 
 ******************
 
     homeHeader
@@ -196,6 +127,7 @@ footer {
 #header {
   height: 23vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -236,7 +168,9 @@ footer {
   padding-right: 40px;
   grid-area: btn;
   display: flex;
+  flex-direction: row;
   justify-content: end;
+  align-items: center;
 }
 
 #prodBtn button {
@@ -289,7 +223,8 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 .carrousel {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: end;
+  align-items: center;
   height: 40vh;
   width: 80vw;
   margin: 0px auto;
@@ -314,8 +249,9 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 
 .mainCarr__cards {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
   width: 40vw;
   height: 99%;
   border-radius: 10px;
@@ -379,21 +315,22 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .sectProd__box {
   height: 22%;
-  border: 1px solid #4C2D10;
   display: flex;
   border-radius: 10px;
   font-size: 1.1em;
-  box-shadow: 0px 3px 5px #9c9898;
+  box-shadow: 0px 5px 7px #9c9898;
 }
 
 .sectProd__box div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .sectProd__box span {
@@ -432,6 +369,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   height: 96%;
   border: 1px solid #4C2D10;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -439,8 +377,9 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 .anuncioProd__container {
   height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   box-shadow: 0px 5px 15px #9c9898;
 }
 
@@ -463,10 +402,10 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 
 */
 #aboutUs {
-  padding-top: 15px;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -499,6 +438,82 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 
 #aboutUs span {
   font-size: 1.4em;
+}
+
+/* 
+
+****************
+    Footer
+****************
+
+*/
+footer {
+  height: 25vh;
+  font-size: 0.9em;
+  border-top: 1px solid #4C2D10;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 40% 20%;
+  grid-template-areas: "form icons" "form info" "copyr copyr";
+}
+
+#footerForm {
+  grid-area: form;
+  margin: 10px 0px 0px 5%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #4C2D10;
+}
+
+#footerForm div {
+  margin-top: 10px;
+}
+
+#footerIcons {
+  grid-area: icons;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footerIcons div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #4C2D10;
+  box-shadow: 0px 3px 5px #9c9898;
+}
+
+#footerIcons div:active {
+  height: 18px;
+  width: 18px;
+  background-color: #7F5427;
+  border: none;
+}
+
+#footerIcons div a:active {
+  color: #FFF;
+}
+
+#footerInfo {
+  grid-area: info;
+  margin: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footerCopy {
+  grid-area: copyr;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
 }
 
 /* 

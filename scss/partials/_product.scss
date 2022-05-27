@@ -15,22 +15,18 @@
 
 .sectProd{
     grid-area: product;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @include flexBox(column, space-evenly, flex-start);
 
     &__box{
         height: 22%;
-        border: $brd-gral;
+        // border: $brd-gral;
         display: flex;
         border-radius: $brd-rds;
         font-size: 1.1em;
-        box-shadow: $box-shadow-min;
+        box-shadow: map-get($box-shadow, gral);
 
         & div{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            @include flexBox(column, space-evenly, flex-start);
         }
 
         & span{
@@ -55,7 +51,7 @@
 }
 
 .box__img{
-    width: 30%;
+    width: $full*0.3;
     height: $full;
 
     & img{
@@ -67,19 +63,15 @@
 
 .anuncioProd{
     grid-area: aside;
-    margin: $mrg-ctr-top;
+    margin: map-get($margin-ctr, top);
     height: 96%;
     border: $brd-gral;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox();
 
     &__container{
         height: $full;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: $box-shadow-max;
+        @include flexBox();
+        box-shadow: map-get($box-shadow, max);
 
         & h4{
             font-size: 2em;
@@ -88,8 +80,8 @@
         }
 
         & img{
-            height: 100%;
-            width: 100%;
+            height: $full;
+            width: $full;
         }
     }
 }

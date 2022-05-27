@@ -33,18 +33,14 @@ footer{
 
 #footerIcons{
     grid-area: icons;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexBox(row, space-around, center);
 
     & div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexBox();
         height: 22px;
         width: 22px;
         border: $brd-gral;
-        box-shadow: $box-shadow-min;
+        box-shadow: map-get($box-shadow, min);
 
         &:active{
             height: 18px;
@@ -68,8 +64,6 @@ footer{
 
 #footerCopy{
     grid-area: copyr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox();
     font-size: 0.8em;
 }

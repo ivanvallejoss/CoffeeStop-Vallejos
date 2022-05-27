@@ -8,7 +8,7 @@
 
 
 nav, .gralHeader{
-    box-shadow: $box-shadow-gral;
+    box-shadow: map-get($box-shadow, gral);
     position: sticky;
     top: 0px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), 
@@ -20,15 +20,15 @@ nav, .gralHeader{
 .navbar{
     min-height: 7vh;
     width: $full;
-    display: flex;
-    justify-content: space-around;
+    @include flexBox(row, space-around);
 
     &__menu{
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+        @include flexBox(row, space-around, center);
         width: $full;
-        display: flex;
         font-size: 1em;
-        align-items: center;
-        justify-content: space-around;
         list-style: none;
 
         & li a{

@@ -7,11 +7,9 @@
 */
 
 #aboutUs{
-    padding-top: 15px;
+    // padding-top: 10px;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexBox(column);
 
     & div{
         display: flex;
@@ -19,7 +17,7 @@
         margin: 5px 35px;
         height: 28%;
         border-radius: $brd-rds;
-        box-shadow: $box-shadow-max;
+        box-shadow: map-get($box-shadow, max);
 
         &:nth-child(3){
             flex-direction: row-reverse;
