@@ -9,19 +9,26 @@
 #aboutUs{
     // padding-top: 10px;
     height: 100vh;
-    @include flexBox(column);
+    @include flexBox(column, space-around);
 
     & div{
         display: flex;
         align-items: center;
         margin: 5px 35px;
-        height: 28%;
+        height: 28vh;
         border-radius: $brd-rds;
         box-shadow: map-get($box-shadow, max);
+        transition: margin 1s, height 1s, box-shadow 1s;
+    
+            &:nth-child(3){
+                flex-direction: row-reverse;
+            }
 
-        &:nth-child(3){
-            flex-direction: row-reverse;
-        }
+            &:hover{
+                height: 26vh;
+                margin: 5px 42px;
+                box-shadow: map-get($box-shadow, min);
+            }
     }
 
     & iframe{

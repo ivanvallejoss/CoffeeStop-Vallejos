@@ -97,6 +97,10 @@
         font-size: 2em;
     }
 
+    h2{
+        font-size: 1.8em;
+    }
+
     .navbar__menu{
         width: 100%;
         display: flex;
@@ -329,6 +333,61 @@
         justify-content: center;
         align-items: center;
     }
+
+    /* 
+    
+    ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE
+    ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE
+    ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE
+
+    */
+
+    #aboutUs{
+        // padding-top: 10px;
+        height: 120vh;
+        @include flexBox(column, space-around, center);
+    
+        & div{
+            display: flex;
+            align-items: flex-start;
+            margin: 5px 15px;
+            height: 34vh;
+            border-radius: $brd-rds;
+            box-shadow: map-get($box-shadow, max);
+            transition: margin 1s, height 1s, box-shadow 1s;
+    
+            &:nth-child(3){
+                flex-direction: row-reverse;
+            }
+
+            &:hover{
+                height: 31vh;
+                margin: 5px 20px;
+                box-shadow: map-get($box-shadow, min);
+            }
+        }
+    
+        & iframe{
+            width: 50%;
+            border-radius: $brd-rds;
+        }
+    
+        & img{
+            width: 50%;
+            border-radius: $brd-rds;
+        }
+    
+        & p{
+            margin: 10px;
+            font-size: 0.85em;
+        }
+    
+        & strong{
+            font-size: 1.2em;
+            // font-weight: 600;
+        }
+    }
+
 
     /* 
     

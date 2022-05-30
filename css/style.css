@@ -405,7 +405,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -413,13 +413,20 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
   display: flex;
   align-items: center;
   margin: 5px 35px;
-  height: 28%;
+  height: 28vh;
   border-radius: 10px;
   box-shadow: 0px 5px 15px #9c9898;
+  transition: margin 1s, height 1s, box-shadow 1s;
 }
 
 #aboutUs div:nth-child(3) {
   flex-direction: row-reverse;
+}
+
+#aboutUs div:hover {
+  height: 26vh;
+  margin: 5px 42px;
+  box-shadow: 0px 3px 5px #9c9898;
 }
 
 #aboutUs iframe {
@@ -615,6 +622,9 @@ footer {
     color: transparent;
     letter-spacing: 3px;
     font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
   }
   .navbar__menu {
     width: 100%;
@@ -831,6 +841,52 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  /* 
+    
+    ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE
+    ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE
+    ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE ABOUTUS-RESPONSIVE
+
+    */
+  #aboutUs {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #aboutUs div {
+    display: flex;
+    align-items: flex-start;
+    margin: 5px 15px;
+    height: 34vh;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px #9c9898;
+    transition: margin 1s, height 1s, box-shadow 1s;
+  }
+  #aboutUs div:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  #aboutUs div:hover {
+    height: 31vh;
+    margin: 5px 20px;
+    box-shadow: 0px 3px 5px #9c9898;
+  }
+  #aboutUs iframe {
+    width: 50%;
+    border-radius: 10px;
+  }
+  #aboutUs img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  #aboutUs p {
+    margin: 10px;
+    font-size: 0.85em;
+  }
+  #aboutUs strong {
+    font-size: 1.2em;
   }
   /* 
     
