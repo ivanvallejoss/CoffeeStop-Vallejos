@@ -9,14 +9,10 @@
 #header{
     height: 23vh;
     @include flexBox();
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 }
 
 #homeTitle{
     font-size: 1.8em;
-    /* letter-spacing: 5px; */
 }
 
 /* 

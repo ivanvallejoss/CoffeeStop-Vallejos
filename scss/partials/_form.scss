@@ -1,0 +1,95 @@
+.sectForm{
+    @include flexBox(column, flex-start);
+    height: 100vh;
+    width: 100%;
+}
+
+#mainForm{
+    height: 89vh;
+    margin-top: 15px;
+    @include flexBox(column, flex-start, center);
+    border: $brd-gral;
+    border-radius: $brd-rds;
+    box-shadow: map-get($box-shadow, gral);
+
+    & h2{
+        margin-top: 10px;
+    }
+}
+
+fieldset{
+    // height: 20vh;
+    @include flexBox(column, center, flex-start);
+    padding: 5px 15px;
+    margin: 5px;
+    border: none;
+    border-top: $brd-gral;
+}
+
+legend{
+    // text-decoration: underline;
+    font-weight: 500;
+    color: #4c2d10;
+}
+
+label{
+    color: #99652d;
+    margin: 3px 0px;
+}
+
+input{
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: $brd-gral;
+    padding: 5px 0px 0px 3px;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.formGroup{
+    margin-top: 10px;
+
+    & input{
+        margin:0px 2px 0px 3px;
+
+        &:checked{
+            color: #99652d
+        }
+    }
+}
+
+#btnGroup{
+    @include flexBox(row, center, flex-end);
+
+    & input{
+        border: $brd-gral;
+        padding: 5px;
+        margin: 0px 10px;
+        height: 30px;
+    }
+}
+
+#resetBtn{
+    border: $brd-gral;
+    padding: 5px;
+    margin: 0px 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: ($brd-rds)-4;
+    background-color: #FFF;
+    box-shadow: map-get($box-shadow, min);
+    color: #533010;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#sendBtn{
+    @extend #resetBtn;
+    width: 50px;
+    background-color: #99652d;
+    color: #FFF;
+}

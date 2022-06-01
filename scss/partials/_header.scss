@@ -23,9 +23,6 @@ nav, .gralHeader{
     @include flexBox(row, space-around);
 
     &__menu{
-        // display: flex;
-        // justify-content: space-around;
-        // align-items: center;
         @include flexBox(row, space-around, center);
         width: $full;
         font-size: 1em;

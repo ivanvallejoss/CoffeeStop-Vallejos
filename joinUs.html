@@ -28,40 +28,79 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <form action="">
-            <label for="name">What's your name?</label><br>
-            <input type="text" name="name" id="name" placeholder="Write your name"><br><br>
-            <label for="lastName">What is your last name?</label><br>
-            <input type="text" name="lastName" id="lastName" placeholder="Write your lastName"><br><br>
-            <label for="email">What is your email address?</label><br>
-            <input type="email" name="email" id="email" placeholder="Write your email..."><br><br>
-            <label for="age">How old are you?</label><br>
-            <input type="number" name="ahe" id="age"><br><br>
-            <label for="typeCoffee">How  would you prefer your coffeé?</label><br>
-            <select name="typeCoffee" id="coffee">
-                <option value="F">Flat-white</option>
-                <option value="I">Irish</option>
-                <option value="A">American</option>
-            </select><br><br>
-            <input type="submit" value="send">
-            <input type="reset" name="reset" value="reset questionary">
-        </form>
-        <!-- Acá va a estar el formulario, una landing page completa con solo un formulario -->
-    </main>
+    <section class="sectForm">
+        <main id="mainForm">
+            <h2>Join us!</h2>
+            <form id="subForm" action="">
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <label for="name">What's your full-name?</label>
+                    <input type="text" name="name" id="name" placeholder="Write your name">
+                    
+                    <label for="age">How old are you?</label>
+                    <input type="number" name="ahe" id="age" placeholder="18">
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Email</legend>
+                    <label for="email">What is your email address?</label>
+                    <input type="email" name="email" id="email" placeholder="Write your email...">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Nosotros</legend>
+                    <label for="medios">Como llegaste a nosotros?</label>
+                    <select name="medios" id="redes">
+                        <option value="Tw" tabindex="tw">Twitter</option>
+                        <option value="Insta" tabindex="ig">Instagram</option>
+                        <option value="Face" tabindex="fc">Facebook</option>
+                        <option value="GH" tabindex="git">GitHub</option>
+                        <option value="Amigo" tabindex="amg">Amigos</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Queremos saber de vos</legend>
+                    <label for="product">Qué tipo de producto te interesaría comprar?</label>
+                    <select name="product" id="products">
+                        <option value="GC" tabindex="gc">Granos de café</option>
+                        <option value="C" tabindex="cf">Cafeteras</option>
+                        <option value="CM">Café molido</option>
+                    </select>
+                    <div class="formGroup">
+                        <label for="granoCafe">Grano de café:</label>
+                        <input type="radio" name="granoCafe" value="arabica">Arabica
+                        <input type="radio" name="granoCafe" value="robusta">Robusta
+                    </div>
+                </fieldset>
+                <div id="btnGroup">
+                    <input id="sendBtn" type="submit" value="send">
+                    <input id="resetBtn" type="reset" name="reset" value="reset all">
+                </div>
+            </form>
+        </main>
+    </section>
     <footer>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <form>
-            <label for="rqEmail">Would you like to be the first one on trying our new products?</label>
-            <input type="email" name="rqEmail" id="rqEmail" placeholder="insert your email...">
+        <form id="footerForm">
+            <label for="footerEmail">Would you like to be the first one on trying our new products?</label>
+            <div>
+                <input type="email" name="footerEmail" id="rqEmail" placeholder="insert your email...">
+                <input type="submit" name="send" id="footerBtn" value="send">
+            </div>
         </form>
-        <p>Whatsapp: +54 9(###)#-######</p>
-        <p>Direc: Av Chaco ####</p>
-        <p>Derechos reservados - ideaVallejos</p>
-        <!-- Contactos, ingresar email y copyright. Que los iconos de las redes sociales + Copyright aparezcan asomando en la pagina principal-->
+        <div id="footerIcons">
+            <div><h3><a href="https://www.facebook.com/" target="blank">F</a></h3></div>
+            <div><h3><a href="https://www.instagram.com/" target="blank">I</a></h3></div>
+            <div><h3><a href="https://www.twitter.com/" target="blank">T</a></h3></div>
+            <div><h3><a href="https://www.cafecito.com/" target="blank">C</a></h3></div>
+        </div>
+        <div id="footerInfo">
+            <p>Whatsapp: +54 9(###)#-######</p>
+            <p>Dirección: Av Chaco ####</p>
+        </div>
+        <div id="footerCopy">
+            <p>Derechos reservados - ideaVallejos</p>
+        </div>
     </footer>
 </body>
 </html>
