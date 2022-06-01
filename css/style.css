@@ -402,17 +402,21 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 
 */
 #aboutUs {
-  height: 100vh;
+  height: 105vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
+#aboutUs h2 {
+  margin-top: 15px;
+}
+
 #aboutUs div {
   display: flex;
   align-items: center;
-  margin: 5px 35px;
+  margin: 5px 35px 20px 35px;
   height: 28vh;
   border-radius: 10px;
   box-shadow: 0px 5px 15px #9c9898;
@@ -425,7 +429,7 @@ CARROUSEL SECTION CARROUSEL SECTION CARROUSEL SECTION
 
 #aboutUs div:hover {
   height: 26vh;
-  margin: 5px 42px;
+  margin: 5px 42px 20px 42px;
   box-shadow: 0px 3px 5px #9c9898;
 }
 
@@ -474,6 +478,27 @@ footer {
 
 #footerForm div {
   margin-top: 10px;
+}
+
+#footerForm #rqEmail {
+  height: 20px;
+  border: none;
+  font-size: 0.9em;
+  border-bottom: 1px solid #4C2D10;
+}
+
+#footerForm #rqEmail:focus {
+  border: none;
+}
+
+#footerForm #footerBtn {
+  background-color: #FFF;
+  border: 1px solid #4C2D10;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #533010;
+  height: 20px;
+  width: 30px;
 }
 
 #footerIcons {

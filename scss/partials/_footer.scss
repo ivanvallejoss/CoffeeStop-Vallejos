@@ -29,6 +29,27 @@ footer{
     & div{
         margin-top: 10px;
     }
+
+    & #rqEmail{
+        height: 20px;
+        border: none;
+        font-size: 0.9em;
+        border-bottom: $brd-gral;
+
+        &:focus{
+            border: none;
+        }
+    }
+
+    & #footerBtn{
+        background-color: #FFF;
+        border: $brd-gral;
+        border-radius: 3px;
+        font-size: 0.9em;
+        color: #533010;
+        height: 20px;
+        width: 30px;
+    }
 }
 
 #footerIcons{

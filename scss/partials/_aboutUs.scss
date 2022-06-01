@@ -8,13 +8,17 @@
 
 #aboutUs{
     // padding-top: 10px;
-    height: 100vh;
+    height: 105vh;
     @include flexBox(column, space-around);
+
+    & h2{
+        margin-top: 15px;
+    }
 
     & div{
         display: flex;
         align-items: center;
-        margin: 5px 35px;
+        margin: 5px 35px 20px 35px;
         height: 28vh;
         border-radius: $brd-rds;
         box-shadow: map-get($box-shadow, max);
@@ -26,7 +30,7 @@
 
             &:hover{
                 height: 26vh;
-                margin: 5px 42px;
+                margin: 5px 42px 20px 42px;
                 box-shadow: map-get($box-shadow, min);
             }
     }
